@@ -40,11 +40,4 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: "ln -s /etc/nginx/sites-available/default_site /etc/nginx/sites-enabled/default_site"
 
-
-  # APT update
-  #config.vm.provision "shell", inline: "sudo apt update && sudo apt upgrade -y"
-
-  # start PHP-FPM
-  config.vm.provision "shell", inline: "sudo php-fpm7.2"
-  
 end
