@@ -1,0 +1,287 @@
+:root {
+    --div-width: 1000px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 0px;
+    margin: 0 auto;
+    font: 1em Verdana, Arial, sans-serif;
+    background: rgb(10, 64, 211);
+    background: linear-gradient(0deg, rgb(17, 148, 67) 0%, rgb(44, 47, 202) 50%);
+    /* https://cssgradient.io/ */
+    background-attachment: fixed;
+}
+
+#TopDiv {
+    position: relative;
+    min-width: var(--div-width);
+    width: var(--div-width);
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+    /*font styling*/
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(20, 15, 88);
+    font-variant: small-caps;
+}
+
+#TweenDiv {
+    position: relative;
+    width: var(--div-width);
+    height: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(107, 40, 146);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+#CenterAreaDiv {
+    position: relative;
+    min-width: var(--div-width);
+    width: var(--div-width);
+    margin-top: 5px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10em;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 50%;*/
+    height: max-content;
+}
+
+#logoDiv {
+    position: relative;
+    float: left;
+}
+
+#adminLogoHoverDiv {
+    /* for stacking admin overlay on bizprofile logo*/
+    position: relative;
+    float: left;
+    left: -190px;
+}
+
+#fieldsDiv {
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    padding: 2em 2em 3em 2em;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+#messageDIV {
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    border: solid rgb(192, 192, 192) 1px;
+    padding: 0.7em;
+    width: 75%;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+#messageDIV:empty{
+    display:none;
+}
+
+#cookieTab {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#cookiePolicyBG {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cookiePolicy {
+    display: none;
+    height: 500px;
+    width: 800px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+#submitButtonDiv {
+    float: right;
+}
+
+.password {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(119, 119, 119);
+    width: 285px;
+    padding: 1px 1px 1px 19px;
+    cursor: text;
+    font-family: Calibri, Verdana, sans-serif;
+}
+
+.username {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(119, 119, 119);
+    width: 285px;
+    padding: 1px 1px 1px 19px;
+    cursor: text;
+    font-family: Calibri, Verdana, sans-serif;
+}
+
+div.left {
+    float: left;
+    margin-left: 5px;
+}
+
+div.right {
+    float: right;
+    margin-right: 5px;
+}
+
+footer {
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 0.8em;
+    text-align: center;
+    color: rgb(102, 102, 102);
+    width: var(--div-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer>a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+
+footer>a:hover {
+    text-decoration: underline;
+    color: rgb(102, 102, 102);
+}
+
+a>img {
+    border: none;
+}
+
+/* Privacy Policy */
+
+#pp * {
+    font-family: "Roboto", sans-serif;
+}
+
+.ppColumn {
+    width: 200px;
+}
+
+ul.skinnyList {
+    padding-left: 0.2em;
+    list-style: none;
+}
+
+ul.skinnyList>li {
+    padding-left: 0.3em;
+}
+
+li.noBullet {
+    list-style: none !important;
+}
+
+ul.skinnyList>li::before {
+    content: "•";
+    color: gray;
+}
+
+ul.subList>li::before {
+    content: "•";
+    color: silver;
+}
+
+ol.toc li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol.toc li a:hover {
+    text-decoration: underline;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.hidden{
+    display:none;
+}
+
+.alignable {
+    width: 100px;
+    display: inline-block;
+    padding-right: 15px;
+}
