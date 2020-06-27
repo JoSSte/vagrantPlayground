@@ -20,21 +20,25 @@
     <div class="centered"><span class="Page_headline">Welcome to world</span></div>
     <br>
     <div class="centered" style="width:100% ">
-      <form accept-charset="utf-8" id="loginForm" name="loginForm" action="/login.php" method="get" target="_blank">
+      <form accept-charset="utf-8" id="loginForm" name="loginForm" action="/login.php" method="get" target="formoutput">
         <fieldset>
           <legend>Login</legend>
           <div class="form-group">
             <label class="alignable" for="uid">Username</label>
-            <input type="text" name="uid" class="username thinborder" id="uid" placeholder="SOMETEXT">
+            <input type="text" name="uid" class="username thinborder" id="uid" placeholder="username">
             <br>
             <label class="alignable" for="passwd">Password:</label>
-            <input type="password" class="password thinborder" name="passwd" id="passwd" placeholder="SOMETEXT" />
+            <input type="password" class="password thinborder" name="passwd" id="passwd" placeholder="password" />
           </div>
           <div>
-            <input type="submit" class="adminButton adminButton-login" value="SOMETEXT" />
+            <input type="submit" class="adminButton adminButton-login" value="submit" />
           </div>
         </fieldset>
       </form>
+      <h2>PHPinfo</h2>
+      <iframe src="phpinfo.php" class="wideIframe"></iframe>
+      <h2>Form output</h2>
+      <iframe name="formoutput" src="login.php?username=donald&passwd=duck" class="wideIframe"></iframe>
     </div>
     <div id="messageDIV"></div>
   </div>

@@ -285,3 +285,10 @@ ol.toc li a:hover {
     display: inline-block;
     padding-right: 15px;
 }
+
+
+.wideIframe{
+    display:block;
+    width: 100%;
+    height: 250px;
+}
